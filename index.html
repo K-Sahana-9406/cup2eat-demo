@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CUP2EAT — EAT YOUR DRINK | Premium Edible Cups</title>
+  <meta name="description" content="Why throw away the cup when you can eat it? CUP2EAT creates premium 100% edible cups for tea, chai, coffee, and cold shakes. Pure veg, leak-proof, and designed for cafés, restaurants and celebrations.">
+  <meta name="keywords" content="Edible cups India, Edible coffee cups, Edible tea cups, Chocolate-coated edible cups, Edible cups for cafés, Edible cups wholesale, Edible cups for restaurants, Edible cups for events">
+  <meta name="theme-color" content="#1F2A1A">
+  <link rel="canonical" href="https://cup2eat.demo/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/public/favicon.png">
+  <link rel="apple-touch-icon" href="/public/favicon.png">
+
+  <!-- OpenGraph Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CUP2EAT — EAT YOUR DRINK | The Cup You Can Eat">
+  <meta property="og:description" content="Meet the cup that doesn't end up as disposable waste. Enjoy your hot chai or cold coffee, then eat the cup as a crisp biscuit dessert.">
+  <meta property="og:image" content="/public/images/logo.png">
+  <meta property="og:site_name" content="CUP2EAT">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CUP2EAT — EAT YOUR DRINK">
+  <meta name="twitter:description" content="Premium edible cups for hot and cold beverages. Pure veg, leak-proof, and unforgettable.">
+  <meta name="twitter:image" content="/public/images/logo.png">
+
+  <!-- Google Fonts: Fraunces & DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..800;1,9..40,300..800&family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS Configuration (Matching Exact Brand Tokens) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              emerald: '#0F5C47',
+              forest: '#1F2A1A',
+              gold: '#C9A24B',
+              maroon: '#6B2F33',
+              cocoa: '#3B1F1A',
+              sage: '#E5EAD9',
+              cream: '#F8F8F2',
+              tan: '#D9A56B'
+            }
+          },
+          fontFamily: {
+            display: ['Fraunces', 'Georgia', 'serif'],
+            body: ['DM Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Master Application Styles -->
+  <link rel="stylesheet" href="/src/styles/main.css">
+
+  <!-- Structured Data: Organization & Product Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://cup2eat.demo/#organization",
+        "name": "CUP2EAT",
+        "url": "https://cup2eat.demo/",
+        "logo": "https://cup2eat.demo/public/images/logo.png",
+        "slogan": "EAT YOUR DRINK.",
+        "description": "Premium edible cups for hot and cold beverages in India.",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91-98765-43210",
+          "contactType": "customer service",
+          "areaServed": "IN",
+          "availableLanguage": ["English", "Hindi"]
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://cup2eat.demo/#/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Shop",
+            "item": "https://cup2eat.demo/#/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "For Businesses",
+            "item": "https://cup2eat.demo/#/business"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-[#F8F8F2] text-[#3B1F1A] antialiased">
+  
+  <!-- Root Single Page Application Mount Point -->
+  <div id="app"></div>
+
+  <!-- Main ES Module Bootstrapper -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
+

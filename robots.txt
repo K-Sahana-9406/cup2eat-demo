@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /checkout
+
+Sitemap: https://cup2eat.demo/sitemap.xml
+
